@@ -28,19 +28,21 @@ La API está construida siguiendo principios de **arquitectura limpia** y patron
 
 ---
 
-## 📂 Estructura del Proyecto
+## 📁 Estructura del Proyecto
 
+```text
 src/
-├── routes/ # Endpoints HTTP
-├── services/ # Lógica de negocio
-│ └── operations/ # Operaciones de imagen (Strategy)
-├── handlers/ # Orquestación de operaciones
-├── decorators/ # Auth y Logging
-├── logging/ # Logger a archivo
-├── middleware/ # Multer, auth
-├── models/ # Modelos de datos
-├── errors/ # Manejo de errores
-├── types/ # Tipos compartidos
+├── routes/        # Endpoints HTTP
+├── services/      # Lógica de negocio
+│   └── operations/ # Operaciones de imagen (Strategy)
+├── handlers/      # Orquestación de operaciones
+├── decorators/    # Auth y Logging (AOP)
+├── logging/       # Logger a archivo / Mongo (opcional)
+├── middleware/    # Multer, auth
+├── models/        # Modelos de datos
+├── errors/        # Manejo de errores
+├── types/         # Tipos compartidos
+
 
 ---
 
